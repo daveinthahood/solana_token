@@ -1,0 +1,23 @@
+{
+  "name": "solana_tesy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "keypair": "ts-node ./keygen.ts",
+    "airdrop" : "ts-node ./airdrop.ts",
+    "mint" : "ts-node ./spl_init.ts",
+    "mintTo": "ts-node ./spl_mint.ts",
+    "transaction" : "ts-node ./spl_trans.ts"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.4.6",
+    "@solana/web3.js": "^1.92.3",
+    "@types/node": "^20.14.2",
+    "bs58": "^5.0.0",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
